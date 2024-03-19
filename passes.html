@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Declaration of love</title>
+	<link rel="icon" type="image/x-icon" href="img/fav.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="dflex">
+				<div class="logo">
+					Love
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="passes.html"class="activem">Passes</a></li>
+						<li><a href="loveletter.html">Love Letter</a></li>
+						<li><a href="memories.html">Memories</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+					<i class="fa fa-bars" onclick="openm();"></i>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="sm-banner">
+		<div class="container">
+			<h1 class="text-center">FREE PASSES</h1>
+			<p> Use these passes as needed, if you need a customized pass then please reach out and I can get one made to custom your needs. If you need help or have questions, please reach out to the owner of the passes. </p>
+		</div>
+		<div class="area" >
+			<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="secondsec">
+		<div class="container">
+			<div class="stwo-col">
+				<div>
+
+					<div>
+						<img src="img/lovepass.png" class="full br" />
+					</div>
+
+				</div>
+				<div>
+					<h2>LOVE PASS</h2>
+					<p>My love</p>
+					<p>You can laugh and call me lame, but this is a love pass. Take a screenshot and present when you are ready to board. Your flight will take off shortly after it is validated by yours truly. 
+					As a validation, it gets stamped with a kiss. I know flights give you anxiety, but this one will be short and sweet. There will be no turbulence. Your flight will only have you on board and you will be placed in VIP section.
+					No one has ever been on board, but I hope that does not shy you away from turning in your love pass. If you have any doubts or concerns, please rest assure that I will hold your hand and guide you while you fly on this journey with me.
+					</p>
+
+				</div>
+			</div>
+			
+			<div class="stwo-col mreverse">
+				
+				<div>
+					<h2>KISS PASS</h2>
+					<p> I know that with the distance, this is kind of hard. However, every time that this is redeemed, I will give you 5 kisses. Over the phone or in person depending on where I am. 
+					I know that maybe to you they dont mean as much over the phone, but I am willing to make it as personal as I can and these will be with facetime calls so that you can see my smile after. 
+					You can redeem an unlimited amount of times as noted on the pass. Typically, fast delivery depending on circumstances. My lips have not been elsewhere so there is no need to worry about that. 
+					You can even tell me where you want the kiss. 
+					</p>
+				</div>
+				<div>
+					<img src="img/kisses.jpg" class="full br" />
+				</div>
+			</div>
+			
+			<div class="stwo-col">
+				<div>
+					<img src="img/care.jpg" class="full br" />
+				</div>
+				<div>
+					<h2>REASSURANCE & COMFORT</h2>
+					<p>Consider this pass your direct line to a little extra love and reassurance whenever life feels overwhelming. 
+					Whether you need a listening ear, a comforting hug, or just someone to sit with you in silence, I'm here, always.
+					No expiration date, no limits—just genuine care and support tailored specifically for you.</p>
+
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<script src='js/buttonanimation.js'></script>
+	<script  src="js/script.js"></script>
+	<script>
+		$(window).scroll(function() {    
+			var scroll = $(window).scrollTop();
+
+			 //>=, not <=
+			if (scroll >= 100) {
+				//clearHeader, not clearheader - caps H
+				$("header").addClass("blackbg");
+			}else{
+				$("header").removeClass("blackbg");
+			}
+		}); //missing );
+
+		function openm(){
+			$('.nav ul').toggle();
+		}
+	</script>
+</body>
+</html>
